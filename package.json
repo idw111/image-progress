@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "component-emitter": "^1.2.1",
-    "lodash": "^4.17.10"
+    "lodash.merge": "^4.6.1"
   }
 }

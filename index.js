@@ -1,7 +1,7 @@
 'use strict';
 
 var EventEmitter = require('component-emitter');
-var merge = require('lodash/fp/merge');
+var merge = require('lodash.merge');
 
 var ImageProgress = module.exports = function(url, params) {
     EventEmitter.call(this);
