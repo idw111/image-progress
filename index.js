@@ -1,7 +1,7 @@
 'use strict';
 
 var EventEmitter = require('component-emitter');
-var _ = require('lodash');
+var merge = require('lodash/fp/merge');
 
 var ImageProgress = module.exports = function(url, params) {
     EventEmitter.call(this);
@@ -10,7 +10,7 @@ var ImageProgress = module.exports = function(url, params) {
 
     var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
 
-    this.options = _.merge({
+    this.options = merge({
         autostart: false,
         autoclear: true,
         leading: 2,
